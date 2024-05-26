@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, } from "firebase/auth";
 import { createContext } from "react"
 import auth from "../Firebase/Firebase.config";
