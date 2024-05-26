@@ -32,7 +32,7 @@ const Services = () => {
           believable.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5 my-5">
+      <div className="grid md:grid-cols-3 gap-5 my-5">
         
         {/* Render services data */}
         {services.length > 0 ? (

@@ -39,7 +39,7 @@ const Team = () => {
   const append = () => {
     if (swiperRef) {
       swiperRef.appendSlide(
-        `<div class="swiper-slide ">Slide ${++appendNumber}</div>`
+        `<div class="swiper-slide">Slide ${++appendNumber}</div>`
       );
     }
   };
@@ -48,9 +48,9 @@ const Team = () => {
     <div className="my-20">
       <div className="text-center mb-10">
         <h3 className="text-lg text-orange-600 font-bold">Team</h3>
-        <h3 className="text-5xl font-bold my-5">Meat Our Team</h3>
+        <h3 className="text-5xl font-bold my-5">Meet Our Team</h3>
         <p>
-          the majority have suffered alteration in some form, by injected
+          The majority have suffered alteration in some form, by injected
           humour, or randomised <br /> words which do not look even slightly
           believable.
         </p>
@@ -64,34 +64,31 @@ const Team = () => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
               <img
                 src={img1}
-                alt="Shoes"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title text-3xl font-bold ">Car Engine Plug</h2>
-              <p className="text-xl font-bold text-zinc-600">Engine Expert</p>
-              <div className="card-actions text-4xl ">
-                <FaFacebookSquare />
-                <FaLinkedin />
-                <FaFacebook />
-                <FaInstagram />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img
-                src={img2}
-                alt="Shoes"
+                alt="Team member"
                 className="rounded-xl"
               />
             </figure>
@@ -108,11 +105,32 @@ const Team = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-10">
+              <img
+                src={img2}
+                alt="Team member"
+                className="rounded-xl"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title text-3xl font-bold">Car Engine Plug</h2>
+              <p className="text-xl font-bold text-zinc-600">Engine Expert</p>
+              <div className="card-actions text-4xl">
+                <FaFacebookSquare />
+                <FaLinkedin />
+                <FaFacebook />
+                <FaInstagram />
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
               <img
                 src={img3}
-                alt="Shoes"
+                alt="Team member"
                 className="rounded-xl"
               />
             </figure>
@@ -129,11 +147,11 @@ const Team = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
               <img
                 src={img1}
-                alt="Shoes"
+                alt="Team member"
                 className="rounded-xl"
               />
             </figure>
@@ -150,11 +168,11 @@ const Team = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
               <img
                 src={img2}
-                alt="Shoes"
+                alt="Team member"
                 className="rounded-xl"
               />
             </figure>
@@ -171,53 +189,11 @@ const Team = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card md:w-80 lg:w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
               <img
                 src={img3}
-                alt="Shoes"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title text-3xl font-bold">Car Engine Plug</h2>
-              <p className="text-xl font-bold text-zinc-600">Engine Expert</p>
-              <div className="card-actions text-4xl">
-                <FaFacebookSquare />
-                <FaLinkedin />
-                <FaFacebook />
-                <FaInstagram />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img
-                src={img1}
-                alt="Shoes"
-                className="rounded-xl"
-              />
-            </figure>
-            <div className="card-body items-center text-center">
-              <h2 className="card-title text-3xl font-bold">Car Engine Plug</h2>
-              <p className="text-xl font-bold text-zinc-600">Engine Expert</p>
-              <div className="card-actions text-4xl">
-                <FaFacebookSquare />
-                <FaLinkedin />
-                <FaFacebook />
-                <FaInstagram />
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card w-96 bg-base-100 shadow-xl">
-            <figure className="px-10 pt-10">
-              <img
-                src={img2}
-                alt="Shoes"
+                alt="Team member"
                 className="rounded-xl"
               />
             </figure>
